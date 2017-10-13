@@ -22,7 +22,7 @@ tagver.version().then(version => console.log(version));
 
 ``` javascript
 {
-  cwd: './'
+  cwd: './' // Directory which tagver should use for git commands
 }
 ```
 
