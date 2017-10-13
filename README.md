@@ -55,7 +55,7 @@ tagver.bump('patch').then(version => console.log(version));
 
 ## Cli Usage
 
-```
+``` shell
 $ npm i -g tagver
 ```
 
@@ -63,7 +63,7 @@ $ npm i -g tagver
 
 Returns the current highest semver version tag from git
 
-```
+``` shell
 $ git tag
 test
 v0.1.0
@@ -79,7 +79,7 @@ $ tagver
 
 Bumps the version to the one specified
 
-```
+``` shell
 $ tagver 1.2.3
 1.2.3
 ```
@@ -88,7 +88,7 @@ $ tagver 1.2.3
 
 Bumps the major version
 
-```
+``` shell
 $ tagver
 1.2.3
 
@@ -100,7 +100,7 @@ $ tagver major
 
 Bumps the minor version
 
-```
+``` shell
 $ tagver
 1.2.3
 
@@ -112,7 +112,7 @@ $ tagver minor
 
 Bumps the patch version
 
-```
+``` shell
 $ tagver
 1.2.3
 
@@ -126,7 +126,7 @@ Optional message to use for git tags.
 
 `%s` will be replaced with the version number.
 
-```
+``` shell
 $ tagver patch -m "Auto release package [v%s]"
 ```
 
@@ -134,7 +134,7 @@ $ tagver patch -m "Auto release package [v%s]"
 
 Prevents tagver from creating a git tag. This will also prevent any publishing of tags.
 
-```
+``` shell
 $ git tag
 v1.2.0
 v1.2.1
