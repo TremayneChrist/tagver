@@ -24,6 +24,7 @@ tagver.version().then(version => console.log(version));
 {
   cwd: './'
 }
+```
 
 ### tagver.bump(input[, options])
 
