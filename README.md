@@ -18,6 +18,13 @@ returns: `Promise`
 tagver.version().then(version => console.log(version));
 ```
 
+#### options
+
+``` javascript
+{
+  cwd: './'
+}
+
 ### tagver.bump(input[, options])
 
 Bumps the version based on the input.
@@ -33,14 +40,15 @@ tagver.bump('minor').then(version => console.log(version));
 tagver.bump('patch').then(version => console.log(version));
 ```
 
-### options
+#### options
 
 ``` javascript
 {
-  cwd: './',             // Directory which tagver should use for git commands
-  tag: true,             // Should tagver store a git tag?
-  publish: true,         // Should tagver publish new tags to the remote?
-  message: 'Release v%s' // Custom tag message. %s will be replaced with the version number
+  cwd: './',              // Directory which tagver should use for git commands
+  tag: true,              // Should tagver store a git tag?
+  publish: true,          // Should tagver publish new tags to the remote?
+  message: 'Release v%s', // Custom tag message. %s will be replaced with the version number
+  base: '0.0.0'           // Initial version to increment when no version is found  
 }
 ```
 
