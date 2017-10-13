@@ -65,7 +65,7 @@ Returns the current highest semver version tag from git
 
 ``` shell
 $ git tag
-test
+test-tag
 v0.1.0
 v0.1.1
 v0.1.10
